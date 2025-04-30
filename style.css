@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: gulfs-display;
   }
   
   .navbar {
@@ -22,7 +22,7 @@
     display: block;
     padding: 1rem;
     margin-left: 88%;
-    border: black solid 3px;
+    border: rgb(0, 0, 0) solid 3px;
     width: 59px;
     border-radius: 200px;
   }
@@ -98,6 +98,8 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    color: #00f;
+   
   }
   
   .foto-central {
@@ -165,7 +167,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
   }
   
@@ -184,12 +186,27 @@
   }
   
   .imagen-lateral img {
-    width: 100%;
+    width: 50%;
     max-width: 300px;
     height: auto;
     border-radius: 20px;
-    border: 2px solid black;
+    border: 2px solid rgb(0, 0, 0);
+    
+    
   }
   .nosotros {
     justify-content: center;
   }
+
+  @font-face {
+    font-family: "gulfs-display";
+    src: url(fuentes/GulfsDisplay-Normal.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "anybody";
+    src: url(fuentes/Anybody-Black.ttf);
+}
+  
