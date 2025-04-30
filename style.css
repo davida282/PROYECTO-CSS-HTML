@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    background-color: #D796DA;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  /* Ícono hamburguesa */
+  .menu-icon {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: block;
+    padding: 1rem;
+    margin-left: 88%;
+    border: black solid 3px;
+    width: 59px;
+    border-radius: 200px;
+  }
+  
+  /* Ocultar checkbox */
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Menú por defecto: oculto en móvil */
+  .menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: #D796DA;
+    position: absolute;
+    top: 60px;
+    left: 70%;
+    width: 30%;
+    padding: 1rem;
+    z-index: 999;
+    text-align: center;
+    align-items: end;
+  }
+  
+  .menu li {
+    margin: 0.5rem 0;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Mostrar el menú cuando el checkbox está marcado */
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+  
+  /* Pantallas grandes */
+  @media (min-width: 768px) {
+    .menu-icon {
+      display: none;
+    }
+  
+    .menu {
+      display: flex !important;
+      flex-direction: row;
+      position: static;
+      justify-content: flex-end;
+      gap: 1.5rem;
+      width: auto;
+      background-color: transparent;
+      padding: 0;
+    }
+  
+    .menu li {
+      margin: 0;
+    }
+  }
+  
+  /* HERO SECTION */
+  .hero {
+    background: linear-gradient(to bottom, #D796DA 60%, #FFE600 40%);
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+  }
+  
+  .textos-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .foto-central {
+    height: 400px;
+    border-radius: 150px;
+    border: 2px solid black;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* NOSOTROS SECTION */
+  .nosotros {
+    background-color: #FFE600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .imagen-lateral img {
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+  
+  .texto-nosotros {
+    max-width: 500px;
+  }
+  
+  .texto-nosotros h1 {
+    font-size: 3rem;
+    color: #224;
+  }
+  
+  .texto-nosotros p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+  
+  .texto-nosotros h4 {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  /* DECORACIONES */
+  .decor {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #f00;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .decor1 { top: 30px; left: 20px; background-color: #00f; }
+  .decor2 { top: 100px; right: 50px; background-color: #0f0; }
+  .decor3 { bottom: 20px; left: 40%; background-color: #ff0; }
+  .decor4 { top: 50%; left: 10px; background-color: #0ff; }
+  .decor5 { bottom: 10%; right: 20px; background-color: #f0f; }
+  
+  .menu li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .menu li a img {
+    width: 20px; 
+    height: 20px;
+    margin-right: 1.5rem;
+    
+  }
+  .textos-hero h1 {
+    margin-bottom: 3rem;
+  }
+  
+  .nosotros {
+    gap: 2rem;
+  }
+  
+  .imagen-lateral img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+  .nosotros {
+    justify-content: center;
+  }
