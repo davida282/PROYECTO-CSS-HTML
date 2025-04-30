@@ -408,4 +408,41 @@
     transform: rotate(-5deg);
     
   }
+  .galeria {
+    background: linear-gradient(to bottom, #ffffff 72%, #f65b5be5 40%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 22rem;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    
+  }
   
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    background: white;
+    border: 2px solid #f65b5b;
+}
+
+.gallery-item {
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+.galeria::after {
+    content: '';
+    display: block;
+    height: px;
+    background: #f65b5b;
+}
