@@ -67,6 +67,7 @@
   @media (min-width: 768px) {
     .menu-icon {
       display: none;
+      
     }
   
     .menu {
@@ -82,7 +83,46 @@
   
     .menu li {
       margin: 0;
+    }  
+    /* .imagen-lateral, .imagen-lateral2 {
+      display: none; }
+      .foto-central {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
     }
+    .textos-hero h1 {
+      font-size: 2rem;
+  }
+
+  .icono1, .icono2, .icono3, .icono4, .icono5, .icono6,
+  .icono7, .icono8, .icono9, .icono10, .icono11, .icono12 {
+      display: none;
+  }
+    
+  .parrafo1 {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0 1rem;
+}
+.contenedor-imagen {
+  position: static;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.marco1 {
+  display: none;
+}
+
+.novios1 {
+  position: static;
+  width: 100%;
+  transform: none;
+}
+.galeria {
+  grid-template-columns: repeat(2, 1fr);
+} */
   }
   
   /* HERO SECTION */
@@ -120,8 +160,9 @@
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
-    position: relative;
+    position: static;
     flex-wrap: wrap;
+    min-height: 80vh;
   }
   
   .imagen-lateral  {
@@ -166,8 +207,8 @@
   .menu li a img {
     width: 20px; 
     height: 20px;
-    margin-right: 1.5rem;
-    
+    margin-right: 1.5rem;   
+
   }
   .textos-hero h1 {
     margin-bottom: 3rem;
@@ -222,12 +263,11 @@
   .icono1 {
     max-width: 130px;
     height: auto;
-    left: 10px;
     position: absolute;
     top: 52%;
     left: 62%;
     z-index: 3;
-  }
+}
   .icono2 {
     max-width: 30px;
     height: auto;
@@ -308,8 +348,8 @@
     height: auto;
     left: 10px;
     position: absolute;
-    top: -19%;
-    left: 93%;
+    top: 214%;
+    left: 92%;
     z-index: 3;
   }
   .icono8 {
@@ -317,8 +357,8 @@
     height: auto;
     left: 10px;
     position: absolute;
-    top: -19%;
-    left: 11%;
+    top: 214%;
+    left: 6%;
     z-index: 3;
   }
   .icono9 {
@@ -326,8 +366,8 @@
     height: auto;
     left: 10px;
     position: absolute;
-    top: 92%;
-    left: 11%;
+    top: 118%;
+    left: 6%;
     z-index: 3;
   }
   .icono10 {
@@ -335,8 +375,8 @@
     height: auto;
     left: 10px;
     position: absolute;
-    top: 92%;
-    left: 93%;
+    top: 118%;
+    left: 92%;
     z-index: 3;
   }
   .parrafo1 {
@@ -363,10 +403,10 @@
 .parrafo3 {
     position: absolute;
     top: -16.5%;
-    left: 74%;
+    left: 71%;
     font-family: anybody;
 }
-.icono11 {
+/* .icono11 {
     max-width: 100px;
     height: auto;
     left: 10px;
@@ -374,48 +414,59 @@
     top: 125.5%;
     left: 73%;
     z-index: 3;
-  }
+  } */
   .icono12 {
-    max-width: 90px;
+    max-width: 84px;
     height: auto;
     left: 10px;
     position: absolute;
-    top: 124%;
+    top: 204.6%;
     left: 80%;
     z-index: 3;
   }
-  .marco1 {
-    max-width: 316px;
-    height: 460px;
-    border: 2px solid rgb(0, 0, 0);
-    left: 10px;
-    position: absolute;
-    top: 81%;
-    left: 20%;
-    z-index: 3;
-    transform: rotate(-5deg);
-  }
-  .novios1  {
-   
-    max-width: 278px;
+  .icono11 {
+    max-width: 85px; 
     height: auto;
-    border: 2px solid rgb(0, 0, 0);
-    left: 10px;
     position: absolute;
-    top: 82%;
-    left: 21.3%;
-    z-index: 2;
-    transform: rotate(-5deg);
-    
-  }
+    top: 208.5%;
+    left: 73.6%;
+    z-index: 3;
+}
+.contenedor-imagen {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  margin: 2rem auto;
   
+}
+
+.marco1 {
+  position: absolute;
+  top: -140%;
+  left: 57%;
+  width: 89%;
+  height: 100%;
+  border: 2px solid black;
+  transform: rotate(-5deg);
+  z-index: 3;
+}
+
+.novios1 {
+  position: absolute;
+  top: -140%;
+  left: 57%;
+  width: calc(90% - 6px);
+  height: auto;
+  z-index: 0;
+  transform: rotate(-5deg);
+}
 .galeria {
   background: linear-gradient(to bottom, #ffffff 76.5%, #f04444e5 40%);
   display: grid; 
   grid-template-columns: repeat(5, 1fr); 
   grid-template-rows: auto auto; 
   gap: 1rem; 
-  padding: 2rem; 
+  padding: 3rem; 
   border: 2px solid #f65b5b; 
 }
 
