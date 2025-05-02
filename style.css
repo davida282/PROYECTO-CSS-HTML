@@ -398,14 +398,14 @@
 }
 .parrafo2 {
     position: absolute;
-    top: -16.5%;
-    left: 14.5%;
+    top: -17.5%;
+    left: 12.5%;
     font-family: anybody;
 }
 .parrafo3 {
     position: absolute;
-    top: -16.5%;
-    left: 71%;
+    top: -17.5%;
+    left: 77.5%;
     font-family: anybody;
 }
 
@@ -436,10 +436,10 @@
 
 .marco1 {
   position: absolute;
-  top: -140%;
-  left: 57%;
-  width: 89%;
-  height: 100%;
+  top: -190%;
+  left: 90%;
+  width: 99%;
+  height: 117%;
   border: 2px solid black;
   transform: rotate(-5deg);
   z-index: 3;
@@ -447,9 +447,9 @@
 
 .novios1 {
   position: absolute;
-  top: -140%;
-  left: 57%;
-  width: calc(90% - 6px);
+  top: -190%;
+  left: 90%;
+  width: calc(100% - 6px);
   height: auto;
   z-index: 0;
   transform: rotate(-5deg);
@@ -495,6 +495,71 @@
   font-family: anybody;
   font-size: small;
 }
+
+.Precios {
+  height: 100vh;
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(4, 25%);
+  grid-template-areas: 'a1 a1 a2 a3 a4'
+                      'a5 a5 a2 a3 a4'
+                      'a6 a7 a7 a8 a8'
+                      'a6 a7 a7 a9 a9';
+
+  font-family: 'gulfs-display';
+  line-height: 0.9;
+}
+.Precios div {
+  
+}
+
+.a1 {
+  grid-area: a1;
+  border: 2px solid black;
+}
+
+.a2 {
+  grid-area: a2;
+  border: 2px solid black;
+}
+
+.a3 {
+  grid-area: a3;
+  border: 2px solid black;
+}
+
+.a4 {
+  grid-area: a4;
+  border: 2px solid black;
+}
+
+.a5 {
+  grid-area: a5;
+  border: 2px solid black;
+}
+
+.a6 {
+  grid-area: a6;
+  border: 2px solid black;
+}
+
+.a7 {
+  grid-area: a7;
+  border: 2px solid black;
+}
+
+.a8 {
+  grid-area: a8;
+  border: 2px solid black;
+}
+
+.a9 {
+  grid-area: a9;
+  border: 2px solid black;
+}
+
 
 @media (max-width: 768px) {
   .icono11 {
@@ -625,10 +690,15 @@
   /* Ajustar la posición de icono11 e icono12 */
   .icono11,
   .icono12 {
-    display: block;
-    position: relative; /* Cambiado a relative para que se posicionen con el flujo */
+    display: ;
+    position: ; /* Cambiado a relative para que se posicionen con el flujo */
     z-index: 4;
     margin: 0.5rem auto; /* Centrar horizontalmente */
+    left: 30%;
+    margin-top: -6%;
+    
+
+    
   }
 
   .icono11 {
@@ -678,3 +748,4 @@
     display: none;
   }
 }
+
