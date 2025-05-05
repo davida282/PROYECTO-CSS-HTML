@@ -1,0 +1,22 @@
+@media (max-width: 768px) {}
+
+/* NOSOTROS SECTION */
+#nosotros {
+    width: 100vw;
+    background-color: rgba(255, 255, 5, 0.603);
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+}
+.nosotros-contendor {
+    margin: auto;
+    padding: auto;
+    display: flex;
+    width: 50%;
+}
+.cont_img_nosotros{
+    width: 300px;
+}

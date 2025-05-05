@@ -9,6 +9,7 @@
   }
   
   .navbar {
+    width: 100vw;
     background-color: #fdb3ca;
     padding: 1rem;
     position: relative;
@@ -89,8 +90,9 @@
   
   /* HERO SECTION */
   .hero {
+    width: 100vw;
     background: linear-gradient(to bottom, #fdb3ca 60%, rgba(255, 255, 5, 0.603) 40%);
-    position: relative;
+
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 8rem;
@@ -117,17 +119,7 @@
     height: auto;
   }
   
-  /* NOSOTROS SECTION */
-  #nosotros {
-    background-color: rgba(255, 255, 5, 0.603);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem;
-    position: relative;
-    flex-wrap: wrap;
-    min-height: 80vh;
-  }
+
   
   .imagen-lateral  {
     width: 300px;
@@ -418,6 +410,7 @@
   transform: rotate(-5deg);
 }
 #galeria {
+  width: 100vw;
   background: linear-gradient(to bottom, #ffffff 76.5%, #f04444e5 40%);
   display: grid; 
   grid-template-columns: repeat(5, 1fr); 
@@ -716,8 +709,8 @@
     margin-left: auto;
     margin-right: auto;
     bottom: auto;
-    top: 5%; /* Subir el "HOLA AQUI" */
-    margin-top: -70%;
+    top: 15%; /* Subir el "HOLA AQUI" */
+    margin-top: -20%;
   }
 
   .primerF h1 {
@@ -769,23 +762,25 @@
   }
 
   /* Ajustar la posición de icono11 e icono12 */
-  .icono11,
-  .icono12 {
+  .icono11{
     /* display: ;
     position: ;  */
     z-index: 4;
     margin: 0.5rem auto; /* Centrar horizontalmente */
-    left: 30%;
-    margin-top: -6%;
+    left: 70%;
+    margin-top: -11%;
     
 
     
   }
-
-  .icono11 {
+  
+  .icono12{
     max-width: 50px;
-    /* top: auto;  Eliminar posicionamiento absoluto vertical */
-    /* left: auto; Eliminar posicionamiento absoluto horizontal */
+    z-index: 4;
+    margin: 0.5rem auto; /* Centrar horizontalmente */
+    left: 6%;
+    margin-top: -25%;
+    
   }
 
   .icono12 {
@@ -828,6 +823,11 @@
   .icono8 {
     display: none;
   }
+
+
+
+
+
 }
 
 .switch {
@@ -1179,7 +1179,7 @@
   height: auto;
   left: 10px;
   position: absolute;
-  top: 325%;
+  top: 302%;
   left: 39%;
   z-index: 3;
 }
@@ -1188,7 +1188,7 @@
   height: auto;
   left: 10px;
   position: absolute;
-  top: 325%;
+  top: 303%;
   left: 78.5%;
   z-index: 3;
 }
