@@ -118,7 +118,7 @@
   }
   
   /* NOSOTROS SECTION */
-  .nosotros {
+  #nosotros {
     background-color: rgba(255, 255, 5, 0.603);
     display: flex;
     align-items: center;
@@ -417,7 +417,7 @@
   z-index: 0;
   transform: rotate(-5deg);
 }
-.galeria {
+#galeria {
   background: linear-gradient(to bottom, #ffffff 76.5%, #f04444e5 40%);
   display: grid; 
   grid-template-columns: repeat(5, 1fr); 
@@ -470,7 +470,7 @@
   right: 52px;
 }
 
-.Precios {
+#Precios {
   height: 100vh;
   width: 100vw;
 
@@ -980,39 +980,66 @@
   
 }
 
-.consulta {
+#consulta {
   background-color: #fdb3ca;
   height: 100vh;
   width: 100vw;
-  display: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* CAMBIO: ahora alinea a la derecha */
+  justify-content: flex-start;
+  position: relative;
+  padding-top: 5%;
+  padding-right: 5%; /* Opcional: separarlo un poco del borde derecho */
 }
+
 
 .tituloconsulta {
-
+  font-family: 'gulfs-display', sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #00f;
+  text-align: left; /* CAMBIO: texto alineado a la derecha */
+  margin-bottom: 3rem;
+  line-height: 0.9;
+  margin-right: 22%;
+  padding-top: 5%;
 }
+#consulta p {
+  font-family: 'anybody', sans-serif;
+  font-size: 1.5rem;
+  color: #000;
+  text-align: right; /* CAMBIO: texto alineado a la derecha */
+  margin-bottom: 4rem;
+  margin-right: 11.2%;
+ 
+}
+
 .inputContainerDate {
+  width: 30%;
   position: relative;
-  margin-bottom: 20px;
-  
+  margin-bottom: 2rem; /* ajuste menor para espacio con redes */
+  margin-right: 15.2%;
 }
 
 .customDate {
-  width: 13%;
-  padding: 12px;
-  font-size: 20px;
+  width: 100%;
+  padding: 20px;
   font-weight: bold;
-  background-color: #fdb3ca;;
+  background-color: #fdb3ca;
   border: none;
-  border-bottom: 3px solid rgb(255,102,0);
+  border-bottom: 4px solid rgb(255, 102, 0); 
   outline: none;
   transition: border-color 0.3s ease;
-  color: rgb(255,102,0);
-  
+  color: rgb(255, 102, 0);
+  text-align: left; 
+  font-family: 'gulfs-display', sans-serif;
 }
 
 .customDate::placeholder {
-  color: rgb(255,102,0);
-  font-size: 18px;
+  color: rgb(255, 102, 0);
+  font-size: 3rem;
+  text-align: left; /* ALINEADO placeholder también */
 }
 
 .customDate:focus,
@@ -1041,10 +1068,111 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 13%;
-  height: 3px;
-  background-color: rgb(255,102,0);
+  width: 100%;
+  height: 4px; /* MÁS gruesa la línea (antes 3px) */
+  background-color: rgb(255, 102, 0);
 }
+.redessociales {
+  width: 36%; /* O el ancho que prefieras, más amplio si es necesario */
+  height: auto;
+  margin-top: 2rem; /* CAMBIO: lo empuja hacia abajo en vez de arriba */
+  align-self: flex-end; /* asegura que también quede a la derecha */
+  margin-right: 11.2%;
+}
+/* Imágenes ilustrativas */
+.contenedorimgsboda {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:75%; 
+  height: 100%;
+  z-index: 0; 
+  }
+  
+  .contenedorimgsboda img {
+  position: absolute;
+  }
+  
+  /* Posiciones aproximadas - ajustar según sea necesario */
+  .consultaimgboda {
+  left: 20%;
+  top: 26%;
+  width: 30%;
+  z-index: 3;
+  }
+  
+  .consultaimgcamara {
+  left: 16.7%;
+  top: 15%;
+  width: 15%;
+  z-index: 1;
+  }
+  
+  .consultaimgcorazon {
+  left: 12.5%;
+  top: 44%;
+  width: 6.5%;
+  z-index: 1;
+  }
+  
+  .consultaimgnudo {
+  left: 45.5%;
+  top: 57%;
+  width: 6%;
+  z-index: 4;
+  }
+  
+  .consultaimgdisco {
+  left: 44%;
+  top: 15%;
+  width: 10%;
+  }
+  
+  .consultaimganillos {
+  left: 45.5%;
+  top: 46%;
+  width: 8.5%;
+  z-index: 4;
+  }
+  
+  .consultaimgcopas {
+  left: 44.7%;
+  top: 69%;
+  width: 12%;
+  z-index: 4;
+  }
+  
+  .consultaimgnudos3 {
+  left: 19.6%;
+  top: 71%;
+  width: 16%;
+  z-index: 3;
+  }
+  
+  .consultaimgrayo {
+  left: 15%;
+  top: 59%;
+  width: 8.6%;
+  }
+  
+  .consultaimgfeliz {
+  left: 19%;
+  top: 76%;
+  width: 8.2%;
+  z-index: 4;
+  }
+  
+  .consultaimgyay {
+  left: 31.6%;
+  top: 12%;
+  width: 11%;
+  }
+  
+  .consultaimgestrellas {
+  left: 47.5%;
+  top: 34%;
+  width: 5.5%;
+  }
 
 .anillos {
   max-width: 110px;
